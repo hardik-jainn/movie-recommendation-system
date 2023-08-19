@@ -36,7 +36,11 @@ similarity3 = pickle.load(open('similarity3.pkl', 'rb'))
 similarity4 = pickle.load(open('similarity4.pkl', 'rb'))
 similarity5 = pickle.load(open('similarity5.pkl', 'rb'))
 similarity6 = pickle.load(open('similarity6.pkl', 'rb'))
-similarity = np.concatenate((similarity1,similarity2,similarity3,similarity4,similarity5,similarity6), axis=0)
+similarity7 = pickle.load(open('similarity7.pkl', 'rb'))
+similarity8 = pickle.load(open('similarity8.pkl', 'rb'))
+similarity9 = pickle.load(open('similarity9.pkl', 'rb'))
+similarity = np.concatenate((similarity1,similarity2,similarity3,similarity4,similarity5,similarity6,similarity7,similarity8,similarity9), axis=0)
+print(similarity1.shape)
 st.title('Movie Recommendation System')
 
 selected_movie_name = st.selectbox(
